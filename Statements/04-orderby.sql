@@ -1,0 +1,6 @@
+-- ORDENAR LOS RESULTADOS
+SELECT * FROM #TABLA ORDER BY #COLUMNA ASC;  -- Orden ascendente
+SELECT * FROM #TABLA ORDER BY #COLUMNA DESC; -- Orden descendente
+
+-- Ordenar por múltiples columnas
+SELECT * FROM #TABLA ORDER BY #COLUMNA1 ASC, #COLUMNA2 DESC;

@@ -1,0 +1,6 @@
+-- CONSULTAR TODOS LOS DATOS
+SELECT * FROM #TABLA;
+
+-- CONSULTAR DATOS ESPECÍFICOS
+-- Pueden ser multiples columnas separadas por comas
+SELECT #COLUMNA FROM #TABLA;
