@@ -31,3 +31,20 @@ ALTER TABLE #TABLA ADD CONSTRAINT fk_columna1 FOREIGN KEY (#COLUMNA1) REFERENCES
 -- PRIMARY KEY
 -- Define la clave primaria de la tabla
 ALTER TABLE #TABLA ADD CONSTRAINT pk_columna1 PRIMARY KEY (#COLUMNA1); -- Establece #COLUMNA1 como clave primaria de la tabla
+
+-- CHECK
+-- Asegura que los valores en una columna cumplan con una condición específica
+ALTER TABLE #TABLA ADD CONSTRAINT check_columna3 CHECK (#COLUMNA3 >= '2000-01-01'); -- Agrega una restricción CHECK para asegurar que #COLUMNA3 sea mayor o igual a una fecha específica    
+
+-- DEFAULT
+-- Establece un valor predeterminado para una columna
+ALTER TABLE #TABLA MODIFY #COLUMNA2 SET DEFAULT 'Valor Predeterminado'; -- Establece un valor predeterminado para la columna #COLUMNA2  
+
+-- CURRENT_TIMESTAMP
+-- Establece la fecha y hora actuales como valor predeterminado para una columna de tipo fecha/hora
+ALTER TABLE #TABLA MODIFY #COLUMNA3 SET DEFAULT CURRENT_TIMESTAMP; -- Establece la fecha y hora actuales como valor predeterminado para #COLUMNA3   
+
+-- AUTO_INCREMENT
+-- Define una columna para que sus valores se incrementen automáticamente con cada nueva fila insertada 
+ALTER TABLE #TABLA MODIFY #COLUMNA1 INT AUTO_INCREMENT; -- Configura #COLUMNA1 para que sea auto-incremental    
+
