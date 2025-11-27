@@ -11,6 +11,9 @@ CREATE TABLE #TABLA (
 ALTER TABLE #TABLA ADD #COLUMNA4 FLOAT; -- Agrega una nueva columna de tipo flotante a la tabla 
 
 ALTER TABLE #TABLA DROP COLUMN #COLUMNA4; -- Elimina la columna #COLUMNA4 de la tabla
+
+ALTER TABLE #TABLA RENAME COLUMN TO #NUEVO_NOMBRE_TABLA; -- Cambia el nombre de la tabla a #NUEVO_NOMBRE_TABLA 
+
 ALTER TABLE #TABLA MODIFY #COLUMNA2 VARCHAR(200); -- Modifica la columna #COLUMNA2 para permitir hasta 200 caracteres
 
 
