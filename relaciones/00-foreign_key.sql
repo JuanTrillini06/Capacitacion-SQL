@@ -1,0 +1,3 @@
+-- FOREIGN KEY
+-- Una clave foránea (foreign key) es un campo (o conjunto de campos) en una tabla que se utiliza para establecer y reforzar un vínculo entre los datos de dos tablas.
+-- La clave foránea en una tabla apunta a la clave primaria en otra tabla, creando así una relación entre las dos tablas.
